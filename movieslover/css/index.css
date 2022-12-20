@@ -1,0 +1,205 @@
+.mainContent{
+    margin-top: 5vh;
+}
+
+.card_second{
+    background-color: rgb(1, 1, 1);
+    color: white;
+    padding: 0.5rem;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(32, 199, 205, 0.521), 0 6px 20px 0 rgba(0, 254, 233, 0.288);
+
+}
+
+.cards1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 0 20px;
+
+
+}
+
+@media (min-width: 350px) {
+    .cards1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 600px) {
+    .cards1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cards1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .cards1 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+.movie_det img {
+    width: 100%;
+    height: 100%;
+
+}
+.all_det{
+    gap: 2px;
+}
+.all_det h4{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.92);
+}
+.year{
+    font-size: 10px;
+    float: left;
+    text-transform:uppercase;
+}
+.all_det p{
+    float: right;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+/* .btn{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform:uppercase;
+    cursor: pointer;
+    background-color: rgba(190, 189, 189, 0.669);
+}
+.btn:hover{
+    background-color: green;
+    color: #fff;
+} */
+.all_det button{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color:rgba(51, 51, 51, 0.804);
+    color: #fff;
+    margin-top: 10px;
+}
+button:hover{
+    background-color:#13a300;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    margin-top: 25px;
+}
+
+
+
+
+/* video pop css start here */
+
+
+
+
+.overlay {
+  background-color: #000000a6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transition: opacity 500ms;
+  visibility: hidden;
+  padding: 40px;
+  opacity: 0;
+  overflow: auto;
+  overflow-y: scroll;
+
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup5 {
+  display: block;
+  background: rgb(23, 23, 23);
+  margin-top: 30px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(32, 199, 205, 0.521), 0 6px 20px 0 rgba(0, 254, 233, 0.288);
+}
+
+.popup5 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup5 .close {
+
+  top: 20px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.popup5 .close:hover {
+  color: #06D85F;
+}
+
+.popup5 .content {
+  max-height: 50%;
+  overflow: auto;
+}
+
+
+.movie_sec {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  .movie_sec {
+    padding-top: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .movie_sec {
+    padding-top: 100%;
+  }
+
+  .popup5 {
+    margin-top: 100px;
+  }
+}
+
+/* End Here */
